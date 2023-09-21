@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>QR Code yaratish</title>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code yaratish</h1>
+        <div class="input-group">
+            <input type="text" id="text-input" placeholder="Matn yoki URLni kiriting">
+        </div>
+        <div class="qr-code" id="qr-code"></div>
+        <div class="button-group">
+            <button class="btn-generate" onclick="generateQRCode()">QR Code yaratish</button>
+            <button class="btn-download" onclick="downloadQRCode()">QR Codeni yuklab olish</button>
+        </div>
+        <div class="qr-code" id="qr-code"></div>
+    </div>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</body>
+</html>
